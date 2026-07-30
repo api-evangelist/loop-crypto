@@ -1,0 +1,35 @@
+# Loop Crypto
+
+> Loop Crypto is a crypto and stablecoin payment processor for merchants, billing software, and e-commerce platforms. It handles charging a wallet, storing payment methods, accepting stablecoins / ERC-20 / Solana SPL tokens, and settling to merchants in fiat or crypto — via payment links, an embeddable Pay component, and integrations with Stripe, Chargebee, and OpenPay. NOTE: Loop is winding down and folding into Lead; the service was sunset on 2026-02-13 and should not be used for new integrations.
+
+## APIs
+- [Loop Crypto API (v2)](https://api.loopcrypto.xyz/api/v2/): REST API for payments, payouts, customers, entities, merchants, tokens, and webhooks. Auth via api-key + entity-id headers.
+- [Demo environment](https://demo.api.loopcrypto.xyz): test/demo host for exercising integrations.
+
+## Docs
+- [Introduction](https://docs.loopcrypto.xyz): developer documentation home.
+- [Get set up](https://docs.loopcrypto.xyz/docs/get-set-up): create restricted API keys and required headers.
+- [Authorization signatures](https://docs.loopcrypto.xyz/docs/authorization-signatures): verify inbound webhook payloads.
+- [Loop webhooks](https://docs.loopcrypto.xyz/docs/loop-webhooks): webhook delivery, event types, and retry behavior.
+- [List webhooks](https://docs.loopcrypto.xyz/api/webhooks/list-webhooks): webhook management endpoint.
+- [Payouts](https://docs.loopcrypto.xyz/payments/payouts): fiat/crypto settlement and off-ramping.
+- [Widget](https://docs.loopcrypto.xyz/payments/widget): embeddable Pay/PayIn checkout component.
+
+## Artifacts
+- [Authentication profile](authentication/loop-crypto-authentication.yml)
+- [API conventions](conventions/loop-crypto-conventions.yml)
+- [Webhooks surface](asyncapi/loop-crypto-webhooks.yml)
+- [Lifecycle / sunset](lifecycle/loop-crypto-lifecycle.yml)
+- [Sandbox / demo](sandbox/loop-crypto-sandbox.yml)
+- [Packages / SDKs](packages/loop-crypto-packages.yml)
+- [CLI](cli/loop-crypto-cli.yml)
+- [Embedded components](components/loop-crypto-components.yml)
+- [Domain security](security/loop-crypto-domain-security.yml)
+
+## Links
+- [Website](https://www.loopcrypto.xyz/)
+- [API overview](https://www.loopcrypto.xyz/api)
+- [Get started](https://www.loopcrypto.xyz/get-started)
+- [Blog](https://www.loopcrypto.xyz/blog)
+- [Connect builder](https://connect.loopcrypto.xyz/)
+- [GitHub](https://github.com/LoopCrypto)

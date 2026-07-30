@@ -1,0 +1,17 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/LoopCrypto/loop-cli
+name: loop-cli
+repository: https://github.com/LoopCrypto/loop-cli
+official: true
+available: false
+note: >-
+  First-party Loop Crypto command-line tool published under the LoopCrypto GitHub org.
+  Following the Loop wind-down (folding into Lead, sunset 2026-02-13) the public repository
+  no longer resolves; recorded as first-party and previously published, availability flagged
+  false. The detailed command/flag surface was not retrievable during this pass and is left
+  uncaptured rather than fabricated.
+install:
+  - method: git
+    reference: https://github.com/LoopCrypto/loop-cli
+commands: []

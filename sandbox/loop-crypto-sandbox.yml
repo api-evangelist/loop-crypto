@@ -1,0 +1,23 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.loopcrypto.xyz
+summary: >-
+  Loop Crypto exposes a separate demo/test environment addressed at a distinct host, alongside
+  the production API. The SDK selects the environment via a BASE_URL setting. No published test
+  card / test wallet fixture values were retrievable during this pass, so none are recorded.
+environments:
+  - name: production
+    base_urls:
+      - https://api.loopcrypto.xyz/api/v1/
+      - https://api.loopcrypto.xyz/api/v2/
+  - name: demo
+    base_url: https://demo.api.loopcrypto.xyz
+    description: Demo/test environment for exercising integrations before going live.
+credentials:
+  model: Restricted API keys (api-key header) plus an entity-id header, issued per environment from the dashboard developer tab.
+test_values:
+  note: No published magic test values (test wallets, test tokens) were retrievable during this pass; none fabricated.
+builder:
+  name: Loop Connect
+  url: https://connect.loopcrypto.xyz/
+  description: Hosted code builder and demo for generating Connect widget integration code.

@@ -1,0 +1,27 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.loopcrypto.xyz/payments/widget
+summary: >-
+  Loop Crypto ships client-side, embeddable checkout surfaces distinct from its server SDKs.
+  Merchants can embed a hosted checkout link, drop in the Pay / PayIn component, or white-label
+  the Connect widget. The PayIn component emits client-side events so the host page can track
+  payment status through the checkout flow.
+components:
+  - family: checkout
+    name: Pay / PayIn Component
+    kind: embeddable-widget
+    docs: https://docs.loopcrypto.xyz/payments/widget
+    description: Embeddable pay component that renders the crypto/stablecoin checkout and emits status events during the flow.
+  - family: checkout
+    name: Payment Link
+    kind: hosted-link
+    description: Hosted Loop payment link a customer opens to authorize payment by signing a wallet transaction.
+  - family: checkout
+    name: Loop Connect Widget
+    kind: embeddable-widget
+    docs: https://connect.loopcrypto.xyz/
+    description: White-labelable Connect widget with a hosted code builder for generating integration code.
+integrations:
+  - Stripe
+  - Chargebee
+  - OpenPay

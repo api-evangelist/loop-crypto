@@ -1,0 +1,31 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.loopcrypto.xyz/docs/get-set-up
+authentication:
+  style: dual-header-api-key
+  headers: [api-key, entity-id]
+  restricted_keys: true
+  ref: authentication/loop-crypto-authentication.yml
+versioning:
+  style: uri-path
+  versions: [v1, v2]
+  current: v2
+  ref: lifecycle/loop-crypto-lifecycle.yml
+pagination:
+  style: unknown
+  note: A list surface exists (e.g. List Webhooks) but the pagination contract was not documented in the sources reachable during this pass.
+idempotency:
+  supported: false
+  note: No idempotency-key header or idempotency contract was found in the reachable documentation; do not assume safe retries on write operations.
+webhooks:
+  supported: true
+  delivery: POST to a subscriber-provided endpoint
+  retry: 3 immediate retries, then exponential backoff over roughly the next 20 seconds
+  signature_verification: authorization signatures
+  management_endpoint: List Webhooks (requires the GetWebhooks permission)
+  ref: asyncapi/loop-crypto-webhooks.yml
+error_envelope:
+  style: unknown
+  note: The error response envelope was not captured from the reachable sources during this pass.
+rate_limit_signaling:
+  style: unknown

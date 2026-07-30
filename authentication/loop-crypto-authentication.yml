@@ -1,0 +1,38 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.loopcrypto.xyz/docs/get-set-up
+docs: https://docs.loopcrypto.xyz/docs/authorization-signatures
+summary:
+  types: [apiKey]
+  api_key_in: [header]
+  oauth2_flows: []
+  notes: >-
+    Loop Crypto authenticates API requests with two required headers rather than a
+    single bearer token: an api-key header carrying a Loop-issued key, and an
+    entity-id header identifying the calling entity. Keys are created in the Loop
+    dashboard developer tab. Loop issues "restricted" keys scoped to a granular set
+    of API permissions (for example the GetWebhooks permission is required to call
+    the List Webhooks endpoint), so each key only grants the operations it was
+    provisioned for.
+schemes:
+  - name: api-key
+    type: apiKey
+    in: header
+    parameter: api-key
+    description: Loop-issued API key. Created in the dashboard developer tab; keys can be restricted to a permission set.
+    sources: [https://docs.loopcrypto.xyz/docs/get-set-up]
+  - name: entity-id
+    type: apiKey
+    in: header
+    parameter: entity-id
+    description: Identifier for the Loop entity the request acts on behalf of. Required alongside api-key.
+    sources: [https://docs.loopcrypto.xyz/docs/get-set-up]
+permissions_model:
+  style: restricted-key-permissions
+  description: Restricted API keys are provisioned with a discrete list of permissions gating which operations they may call.
+  example_permissions:
+    - GetWebhooks
+webhook_verification:
+  method: authorization-signatures
+  docs: https://docs.loopcrypto.xyz/docs/authorization-signatures
+  description: Inbound webhook deliveries are verified with authorization signatures so recipients can confirm the payload originated from Loop.

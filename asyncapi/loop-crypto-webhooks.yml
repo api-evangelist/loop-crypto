@@ -1,0 +1,28 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.loopcrypto.xyz/docs/loop-webhooks
+type: Webhooks
+spec_type: null
+summary: >-
+  Loop Crypto delivers webhooks by HTTP POST to a subscriber-provided endpoint so platforms
+  can track payment and payout status. The PayIn / Pay component also emits client-side events
+  during the checkout experience. No published AsyncAPI document was found; this captures the
+  documented webhook surface.
+delivery:
+  transport: https-post
+  endpoint: subscriber-provided URL registered with Loop
+  retry: 3 immediate retries, then backoff over roughly the next 20 seconds
+  signature_verification:
+    method: authorization-signatures
+    docs: https://docs.loopcrypto.xyz/docs/authorization-signatures
+management:
+  list_webhooks:
+    docs: https://docs.loopcrypto.xyz/api/webhooks/list-webhooks
+    permission: GetWebhooks
+    description: Returns configured webhooks, filterable by parameters, for verifying webhook configuration across events.
+events:
+  note: >-
+    Loop documents webhook event types on docs.loopcrypto.xyz/docs/loop-webhooks. The full
+    enumerated event-type list was not retrievable during this pass (the docs host was not
+    resolvable) and is intentionally left uncaptured rather than fabricated.
+docs: https://docs.loopcrypto.xyz/docs/loop-webhooks

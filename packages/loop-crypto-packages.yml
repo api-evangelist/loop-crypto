@@ -1,0 +1,33 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/LoopCrypto
+note: >-
+  These are first-party Loop Crypto client libraries (npm @loop-crypto scope, LoopCrypto
+  GitHub org). As of this pass, following the Loop wind-down (folding into Lead, sunset
+  2026-02-13), the npm registry entries and public GitHub repositories no longer resolve
+  (npm returns 404, the org shows no public repositories). They are recorded as first-party
+  and previously published; availability is flagged false. Nothing here is fabricated.
+packages:
+  - language: typescript
+    registry: npm
+    name: "@loop-crypto/loop-core-sdk"
+    url: https://www.npmjs.com/package/@loop-crypto/loop-core-sdk
+    repository: https://github.com/LoopCrypto/loop-core-sdk
+    install: npm install @loop-crypto/loop-core-sdk
+    official: true
+    license: MIT
+    available: false
+    surface: webhooks, tokens, merchants, entities, customers, payments, payouts
+  - language: typescript
+    registry: npm
+    name: "@loop-crypto/loop-sdk"
+    url: https://www.npmjs.com/package/@loop-crypto/loop-sdk
+    official: true
+    available: false
+  - language: typescript
+    registry: github
+    name: loop-cli
+    url: https://github.com/LoopCrypto/loop-cli
+    official: true
+    available: false
+    kind: cli

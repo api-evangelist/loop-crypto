@@ -1,0 +1,24 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.loopcrypto.xyz/
+versioning:
+  scheme: uri-path
+  versions: [v1, v2]
+  current: v2
+  base_urls:
+    - https://api.loopcrypto.xyz/api/v1/
+    - https://api.loopcrypto.xyz/api/v2/
+  docs: https://docs.loopcrypto.xyz
+deprecation:
+  status: service-sunset
+  sunset_date: '2026-02-13'
+  successor: Lead
+  policy: >-
+    Loop, in its current form, is folding into Lead. Existing customers were given 60+ days
+    to wind down their usage of Loop, with the migration/wind-down window ending 2026-02-13.
+    The entire Loop Crypto payments service is therefore end-of-life; new integrations should
+    not be started against this API.
+  source: https://www.loopcrypto.xyz/get-started
+status_page: null
+sla: null
+deprecated_operations: []
