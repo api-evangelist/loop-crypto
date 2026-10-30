@@ -64,6 +64,63 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Loop Crypto is a company surfaced as a portfolio company of a16z and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+> **No longer operating.** This company or product has shut down, been discontinued, or been deprecated. This profile is kept as a historical record and is not maintained or rated.
 
-Backed by: a16z
+**Status:** sunset
+
+Loop Crypto is a crypto and stablecoin payment processor that lets merchants, billing software, and e-commerce platforms accept crypto and stablecoin payments end to end: charging a wallet, storing payment methods, accepting stablecoins, ERC-20 tokens, and Solana SPL tokens, and settling to merchants in either fiat or crypto. Loop offers payment links, an embeddable Pay/PayIn checkout component, a white-labelable Connect widget, and a REST API (v1/v2, api-key + entity-id header auth) covering customers, entities, merchants, tokens, payments, payouts, and webhooks, plus out-of-the-box integrations with Stripe, Chargebee, and OpenPay. Backed by a16z. NOTE: Loop is winding down and folding into Lead; the service was sunset on 2026-02-13 and is not recommended for new integrations.
+
+**Areas:** Company · Payments · Cryptocurrency · Stablecoins · Web3 · Payment Processing · Billing · Solana · Ethereum
+
+## Loop Crypto on APIs.io (historical record)
+
+Everything profiled for Loop Crypto is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/loop-crypto/](https://apis.io/providers/loop-crypto/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Loop Crypto API](https://apis.io/apis/loop-crypto/loop-crypto-api/) — REST API for accepting crypto and stablecoin payments — customers, entities, merchants, tokens, payments, payouts, and webhooks. Authenticated with api-key…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Loop Crypto Webhooks](https://apis.io/asyncapis/loop-crypto/loop-crypto-webhooks/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Loop Crypto Authentication](https://apis.io/security/loop-crypto/loop-crypto-authentication/)
+- [Loop Crypto Domain Security](https://apis.io/security/loop-crypto/loop-crypto-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://loopcrypto.xyz)
+- [Documentation](https://docs.loopcrypto.xyz)
+- [Getting started](https://docs.loopcrypto.xyz/docs/get-set-up)
+- [API reference](https://www.loopcrypto.xyz/api)
+- [Sign up](https://www.loopcrypto.xyz/get-started)
+- [Blog](https://www.loopcrypto.xyz/blog)
+- [GitHub](https://github.com/LoopCrypto)
+
+## API Evangelist rating
+
+**Not rated** — this company is recorded as no longer operating, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Loop Crypto: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/loop-crypto/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
